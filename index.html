@@ -333,6 +333,15 @@
     gap: 2px;
   }
   .work-grid .featured { grid-column: span 2; }
+  .work-grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
+  align-items: start;
+}
+@media (max-width: 600px) {
+  .work-grid-2col { grid-template-columns: 1fr; }
+}
 
   .project-card {
     position: relative;
@@ -914,7 +923,7 @@
     </a>
   </div>
 
- <div class="work-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:2px;align-items:start;">
+<div class="work-grid work-grid-2col">
 
     <!-- Card 1 -->
    <div class="project-card reveal" style="aspect-ratio:16/9;">
